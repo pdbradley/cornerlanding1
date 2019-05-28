@@ -15,6 +15,7 @@ input[type="radio"]{margin: 10px 0};}
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head> 
   <body>
     <!-- Navigation Mobile type 1 -->
@@ -102,7 +103,7 @@ input[type="radio"]{margin: 10px 0};}
           <div class="col-xl-10 col-lg-10">
 
             <section class="feature_11 bg-gray pt-30 pb-35" >
-              <form action="form-handler.php" method="post" class="mt-50 px-100 pt-55 pb-35 radius10" >
+              <form action="http://click2mail.ngrok.io/api/v1/clients" method="post" class="mt-50 px-100 pt-55 pb-35 radius10" >
                 <div class="container px-xl-0" >
                   <h2 class="small" data-aos-duration="500" data-aos="fade-down" data-aos-delay="0">Get your side-by-side DST listing:</h2><br>
                   <div class="row">
@@ -148,6 +149,8 @@ input[type="radio"]{margin: 10px 0};}
                   <div>
 
                     <div class="col-lg-2 d-none d-lg-block"></div>
+                    <div class="g-recaptcha" data-sitekey="6LcOY6UUAAAAAMTozw_9mNsE2bBTl-M9p9_01bYF"></div>
+                    <br />
                     <div class="col-md-12 block text-md-left" data-aos-duration="500" data-aos="fade-down" data-aos-delay="250">
                       <center><button class="btn action-1">Submit</button></center>
 
