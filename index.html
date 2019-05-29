@@ -109,7 +109,7 @@ input[type="radio"]{margin: 10px 0};}
                   <div class="row">
                     <div class="col-md-10 mb-35 block" data-aos-duration="500" data-aos="fade-down" data-aos-delay="0">
                       <div class="mb-10 f-14 semibold text-uppercase sp-20">Name</div>
-                      <input type="text" name="name" class="input w-full border-white focus-action-1 color-heading placeholder-heading" required />
+                      <input type="text" name="name" class="input w-full border-white focus-action-1 color-heading placeholder-heading" />
                     </div>
 
                   </div>
@@ -118,13 +118,13 @@ input[type="radio"]{margin: 10px 0};}
 
                     <div class="col-md-10 mb-35 block" data-aos-duration="500" data-aos="fade-down" data-aos-delay="250">
                       <div class="mb-10 f-14 semibold text-uppercase sp-20">Phone</div>
-                      <input type="text" name="Phone" class="input w-full border-white focus-action-1 color-heading placeholder-heading" required />
+                      <input type="text" name="telephone" class="input w-full border-white focus-action-1 color-heading placeholder-heading" />
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-10 mb-35 block" data-aos-duration="500" data-aos="fade-down" data-aos-delay="0">
                       <div class="mb-10 f-14 semibold text-uppercase sp-20">Email</div>
-                      <input type="text" name="email" class="input w-full border-white focus-action-1 color-heading placeholder-heading" required />
+                      <input type="text" name="email" class="input w-full border-white focus-action-1 color-heading placeholder-heading" />
                     </div>
 
                   </div>
@@ -133,9 +133,9 @@ input[type="radio"]{margin: 10px 0};}
                       <div class="mb-10 f-14 semibold text-uppercase sp-20">Are you an accredited investor?</div>
                       <div class="text-left">
 
-                        <input type="radio" name="yesorno" style="vertical-align: middle; margin: 10px;"> Yes
-                        <input type="radio" name="yesorno" style="vertical-align: middle; margin: 10px;"> No
-                        <input type="radio" name="yesorno" style="vertical-align: middle; margin: 10px;"> Not Sure
+                        <input type="radio" name="investor" style="vertical-align: middle; margin: 10px;" value="yes"> Yes
+                        <input type="radio" name="investor" style="vertical-align: middle; margin: 10px;" value="no"> No
+                        <input type="radio" name="investor" style="vertical-align: middle; margin: 10px;" value="maybe"> Not Sure
 
                       </div>
                       <div class="mt-10 mb-40 hr h-2 bg-white op-5" data-aos-duration="500" data-aos="fade-down" data-aos-delay="500"></div>
@@ -347,7 +347,7 @@ input[type="radio"]{margin: 10px 0};}
             </div>
             <div class="alert alert-danger alert-dismissible alert-form-error" role="alert">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              An error occurred while sending data :(
+              <span class="message">An error occurred while sending data :(</span>
             </div>
             <!-- popup with video -->
             <div class="overlay"></div>

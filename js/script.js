@@ -76,9 +76,11 @@ $(document).ready(function(){
 			var posting = $.post(url, term);
 			posting
 			.done(function(data){
-				if(data=="ok"){
-					$(".alert-form-success").fadeIn(200).delay(5000).fadeOut(200);
+        var response = JSON.parse(data);
+				if(response.status == "ok"){
+          window.location.href = "http://dstproperties1031.com/welcome/new_signup";
 				}else{
+          $(".message").html(response.msg);
 					$(".alert-form-error").fadeIn(200).delay(5000).fadeOut(200);
 				}
 			})
