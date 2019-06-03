@@ -8,5 +8,5 @@ before_install:
   - gem --version
   - gem install s3_website
 deploy:
-  s3_website push
+  - s3_website push
 
