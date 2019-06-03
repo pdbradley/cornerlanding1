@@ -1,0 +1,11 @@
+sudo: false # use container-based infrastructure (faster, among other things)
+language: ruby
+cache: bundler
+rvm:
+  - 2.3.3
+before_install:
+  - gem update --system 2.7.7
+  - gem --version
+  - gem install s3_website
+deploy:
+  s3_website push
