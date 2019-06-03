@@ -9,3 +9,4 @@ before_install:
   - gem install s3_website
 deploy:
   s3_website push
+
