@@ -9,4 +9,4 @@ before_install:
   - gem install s3_website
   - gem install dotenv
 script:
-  - test $TRAVIS_BRANCH == "master" s3_website push 
+  - test $TRAVIS_BRANCH == "master" && s3_website push 
