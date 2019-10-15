@@ -1,6 +1,8 @@
 sudo: false # use container-based infrastructure (faster, among other things)
 language: ruby
 cache: bundler
+jdk:
+  - openjdk8
 rvm:
   - 2.3.3
 before_install:
